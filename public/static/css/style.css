@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Remove Scrollbars */
+/* body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; IE and Edge
+  scrollbar-width: none; Firefox
+}  */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background-color: black;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+nav > ul li {
+  min-width: 10%;
+}
+
+nav > ul li > a,
+nav > ul li > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  width: 100%;
+  background-image: url("/rojas-gin-webapp/public/static/img/banner-placeholder.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+header h1 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 10rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+footer {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  margin: 0 5%;
+}
+
+footer div > p {
+  padding: 1rem 2rem;
+}
