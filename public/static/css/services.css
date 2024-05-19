@@ -58,7 +58,8 @@ main{
 	text-decoration: underline;
 }
 
-.card-text-1 ul, li{
+.card-text-1 ul, 
+.card-text-1 ul > li{
 	padding: 5px;
 	margin: 5px;
 	list-style-type: none;
