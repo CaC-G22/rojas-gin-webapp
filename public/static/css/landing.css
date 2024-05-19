@@ -21,7 +21,9 @@ header h1 {
   font-family: "Great Vibes", cursive;
   font-weight: 600;
   font-style: normal;
-  font-size: 10rem;
+  font-size: 10dvw;
+  text-align: center;
+  text-shadow: 0 0 10px var(--color-tertiary-bis);
   z-index: 900;
 }
 
@@ -141,4 +143,77 @@ main {
 .landing-section article:nth-child(even) .grid-content,
 .landing-section article:nth-child(even) .grid-hyperlink {
   grid-column: 1/3;
+}
+
+@media screen and (width < 1024px) {
+  header h1 {
+    font-size: 15dvw;
+  }
+
+  .landing-section article {
+    width: 90%;
+    margin: 5% 2% 0;
+  }
+
+  .landing-section article:last-child {
+    margin-bottom: 5%;
+  }
+
+  .landing-section article h2 {
+    font-size: 4rem;
+    padding-left: 0.5em;
+  }
+
+  .landing-section article:nth-child(even) h2 {
+    padding-right: 0.5em;
+  }
+
+  .landing-section article .item-grid {
+    font-size: 1.2em;
+    padding: 1%;
+  }
+
+  .grid-hyperlink a,
+  .grid-hyperlink a:hover,
+  .grid-hyperlink a:visited {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (width < 425px) {
+  main {
+    padding: 5%;
+  }
+
+  header h1 {
+    font-size: 25dvw;
+  }
+
+  .landing-section {
+    width: auto;
+  }
+
+  .landing-section article {
+    width: 100%;
+    margin: 5% 2%;
+  }
+
+  .landing-section article:last-child {
+    margin-bottom: 5%;
+  }
+  .landing-section article h2,
+  .landing-section article:nth-child(even) h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+  }
+
+  .landing-section article .item-grid {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 2%;
+  }
 }
