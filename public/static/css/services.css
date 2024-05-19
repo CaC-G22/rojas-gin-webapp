@@ -1,0 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+main{
+	/* background: rgb(1,1,1);
+	background: linear-gradient(178deg, rgba(1,1,1,1) 0%, rgba(100,65,42,1) 51%); */
+}
+
+/*Carta N1*/
+.card-container{
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid brown; */
+	width: 85%;
+	margin: auto;
+}
+
+.card-1{
+	display: flex;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,1,1,1) 90%);
+	border-radius: 15px;
+	border: 1px solid black;
+	margin-top: 20px;
+	/* transition: all 5s; */
+}
+
+.card-image-1{
+	width: 30;
+	/* border: 1px solid black; */
+	
+}
+
+.card-image-1 img{
+	width: 100%;
+	min-height: 100%;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.card-text-1{
+	width: 70%;
+	padding: 10px;
+	/* font-style: italic; */
+	font-size: 20px;
+	color: #F9F3FF;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-text-1 h3{
+	text-decoration: underline;
+}
+
+.card-text-1 ul, li{
+	padding: 5px;
+	margin: 5px;
+	list-style-type: none;
+}
+/*Fin de carta 1*/
+
+/*Carta N2*/
+.card-container{
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid brown; */
+	width: 85%;
+	margin: auto;
+}
+
+.card-2{
+	display: flex;
+	background: rgb(61,1,1);
+	background: linear-gradient(90deg, rgba(61,1,1,1) 0%, rgba(2,0,36,1) 90%);
+	border-radius: 15px;
+	border: 1px solid black;
+	margin-top: 20px;
+	transition: all 2s;
+}
+
+.card-image-2{
+	width: 30;
+	order: 2;
+	/* border: 1px solid black; */
+	
+}
+
+.card-image-2 img{
+	width: 100%;
+	min-height: 100%;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.card-text-2{
+	width: 70%;
+	padding: 10px;
+	/* font-style: italic; */
+	font-size: 20px;
+	color: #F9F3FF;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-text-2 h3{
+	text-decoration: underline;
+	margin: 15px;
+}
+
+.card-text-2> p a,
+.card-text-2> p a:visited{
+	color: #F9F3FF;
+}
+
+/*Fin de carta 2*/
