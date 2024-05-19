@@ -57,6 +57,7 @@ nav > ul {
   list-style-type: none;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   padding: 2px 0;
@@ -66,17 +67,8 @@ nav > ul li {
   position: relative;
   min-width: 10%;
   height: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: 1px solid var(--color-tertiary-bis);
-  /* background: radial-gradient(
-    circle,
-    rgb(0, 0, 0, 0.9) 20%,
-    rgb(0, 0, 0, 0.9) 70%,
-    rgba(226, 226, 226, 0.5) 90%
-  ); */
   box-shadow: inset -40px 0px 50px -45px var(--color-tertiary-bis),
     inset 40px 0px 50px -45px var(--color-tertiary-bis);
   transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
@@ -103,12 +95,6 @@ nav > ul li > a {
   border-radius: inherit;
   transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
 }
-
-/* Wondering if it's necesary */
-/* nav > ul li > a:visited {
-  color: var(--color-tertiary-bis);
-  text-decoration: none;
-} */
 
 nav > ul li:hover,
 nav > ul li:hover > a {
@@ -138,4 +124,33 @@ footer div {
 
 footer div > p {
   padding: 1rem 2rem;
+}
+
+@media screen and (width < 1024px) {
+  nav > ul li {
+    min-width: 15%;
+  }
+}
+
+@media screen and (width < 425px) {
+  nav > ul li {
+    min-width: 33%;
+  }
+
+  nav > ul li:first-child,
+  nav > ul li:last-child {
+    border-radius: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div {
+    margin: 0%;
+  }
+
+  footer div > p {
+    padding: 0.5rem;
+  }
 }
