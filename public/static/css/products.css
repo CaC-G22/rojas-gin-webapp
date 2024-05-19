@@ -1,0 +1,31 @@
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product {
+    float: left;
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 1px solid black;
+}

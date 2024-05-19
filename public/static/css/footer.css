@@ -1,0 +1,36 @@
+.advice{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.localization{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.ig{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
