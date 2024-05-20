@@ -1,0 +1,92 @@
+/* contact */
+
+body {
+    font-family: 'Great Vibes', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  .contenedor-formulario {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Klee One', sans-serif;
+    color: #000;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  label {
+    width: 48%; 
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  [type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+    margin-top: 20px;
+  }
+  
+ 
+  
+  @media only screen and (max-width: 768px) {
+    label {
+      width: 100%; 
+    }
+  }
+  

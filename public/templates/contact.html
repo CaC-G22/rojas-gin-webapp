@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Contactos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: sans-serif;
+        }
+
+        .contenedor-formulario {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        [type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        [type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h2 class="titulo">Contáctanos</h2>
+
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label for="recibir_info">¿Desea recibir más información?</label>
+            <input type="checkbox" id="recibir_info" name="recibir_info">
+
+            <label for="suscribirse">¿Desea suscribirse a nuestro boletín?</label>
+            <input type="checkbox" id="suscribirse" name="suscribirse">
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+</body>
+</html>  
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rojas Gin - Contacto</title>
     <meta name="description" content="Contacto de Gintonería Rojas Gin" />
     <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/contact.css" />
     <link
       rel="shortcut icon"
       href="../static/img/favicon.ico"
       type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Klee+One&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -33,6 +122,7 @@
       <p>Completar con contenido acorde</p>
     </main>
 
+    
     <footer>
       <div><img src="../static/img/logo.png" /></div>
       <div>
@@ -43,3 +133,20 @@
     </footer>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+</head>
+<body>
+
+    <section class="mapa">
+        <h2>Ubicación</h2>
+        <iframe src="https://maps.app.goo.gl/Y7sK6rQQpBA2UBuv9" width="600" height="400"></iframe>
+    </section>
+
+    </body>
+</html>
+
