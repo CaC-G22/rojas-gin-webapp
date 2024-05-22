@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+ 
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rojas Gin - Contacto</title>
     <meta name="description" content="Contacto de Gintonería Rojas Gin" />
     <link rel="stylesheet" href="../static/css/style.css" />
-    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/contact.css" />
+    <script src="https://kit.fontawesome.com/30e55d7dd2.js" crossorigin="anonymous"></script>
     <link
       rel="shortcut icon"
       href="../static/img/favicon.ico"
       type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Klee+One&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -25,22 +32,82 @@
       </ul>
     </nav>
 
-    <header>
-      <h1>Rojas Gin</h1>
-    </header>
-
+    
     <main>
-      <h2>Contacto</h2>
-      <p>Completar con contenido acorde</p>
+     <body>
+       <article class="contenedor-formulario">
+        <h2 class="titulo">Contacto</h2>
+
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label for="recibir_info">¿Desea recibir más información?</label>
+            <input type="checkbox" id="recibir_info" name="recibir_info">
+
+            <label for="suscribirse">¿Desea suscribirse a nuestro boletín?</label>
+            <input type="checkbox" id="suscribirse" name="suscribirse">
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </article>
+
+    <article class="mapa">
+      <h2>Aca Estamos</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1649.970268188881!2d-60.7291177!3d-34.1989957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b85719634fdf95%3A0x988f298d934fa442!2sPunto%20medio%20cerveceria%20%26%20Destileria%20Rojas%20Gin!5e0!3m2!1ses-419!2sar!4v1716326768218!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+     
     </main>
 
+    
     <footer>
-      <div><img src="../static/img/logo.png" /></div>
-      <div>
-        <p>Telefono</p>
-        <p>Facebook</p>
-        <p>Instagram</p>
+      <div class="logo"><img src="../static/img/logo.png" alt="Logo Rojas"></div>
+
+      <div class="advice">
+        <p>Prohibida su venta a menores de 18 años</p>
+        <p>Prohibida su venta a personas embarazadas</p>
+        <p>Consumir con moderación</p>
       </div>
+
+      <div class="contact-info">
+
+        <div class="localization">
+          <a href="https://maps.app.goo.gl/jK7CxrMuNarfVs5KA" class="logo_map" target="_blank" rel="_blank">
+            <i class="fa-solid fa-map-location-dot" alt="Logo mapa"></i>
+          </a>
+          <p>Rojas, Buenos Aires</p>
+        </div>
+
+        <div class="phone">
+          <i class="fa-solid fa-phone-volume" alt="Logo telefono"></i>
+          <p>+54 34 1212-9263</p>
+        </div>
+
+        <div class="email">
+          <i class="fa-regular fa-envelope" alt="Logo coorreo"></i>
+          <p>RojasGin170@gmail.com</p>
+        </div>
+
+        <div class="ig">
+          <a href="https://www.instagram.com/rojas.gin2/?utm_source=qr" class="logo_ig" target="_blank" rel="_blank">
+            <i class="fa-brands fa-instagram" alt="Logo instagram"></i>
+          </a>
+          <p>Instagram</p>
+
+        </div>
+      </div>
+
     </footer>
+    
+  <script src="../static/js/contact.js"></script>  
   </body>
 </html>

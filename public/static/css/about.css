@@ -1,0 +1,88 @@
+/* about */
+
+body {
+    font-family: 'Great Vibes', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+ 
+  /* Hero */
+  
+  .nosotros-heroe {
+    background-color: rgb(224, 224, 224, 0.5);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .nosotros-heroe .titulo {
+    font-size: 3rem;
+    font-family: 'Klee One', sans-serif;
+    color: #000;
+  }
+  
+  .nosotros-heroe .subtitulo {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Secciones */
+  
+  .quienes-somos,
+  .filosofia,
+  .proceso,
+  .productos,
+  .contacto {
+    padding: 50px 0;
+  }
+  
+  .titulo-seccion {
+    font-size: 2rem;
+    font-family: 'Klee One', sans-serif;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .quienes-somos p,
+  .filosofia p,
+  .proceso p,
+  .productos p,
+  .contacto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Listado */
+  
+  .proceso ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .proceso li {
+    margin-bottom: 15px;
+  }
+  
+  .proceso li:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #007}
