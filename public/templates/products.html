@@ -6,11 +6,16 @@
     <title>Rojas Gin - Productos</title>
     <meta name="description" content="Productos de Gintonería Rojas Gin" />
     <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/products.css">
+    <script src="https://kit.fontawesome.com/30e55d7dd2.js" crossorigin="anonymous"></script>
     <link
       rel="shortcut icon"
       href="../static/img/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Klee+One&family=Oxygen+Mono&display=swap"rel="stylesheet"/>
   </head>
   <body>
     <nav>
@@ -24,22 +29,92 @@
       </ul>
     </nav>
 
-    <header>
-      <h1>Rojas Gin</h1>
-    </header>
-
     <main>
       <h2>Productos</h2>
-      <p>Completar con contenido acorde</p>
+      <section class="container">
+        <div class="product">
+            <img src="../static/img/products/Old Tom.jpg" alt="Imagen de Old Tom"> <!-- Imagen 1 -->
+            <br>
+            <b>$6.000</b>
+            <br><br>
+            <p>Old Tom 550 ml</p>
+            <br>
+            <p>Gin clásico, de sabor suave y fresco en verano y seco en invierno.</p>
+            <br>
+            <p>Ideal para consumir en shots</p>
+        </div>
+        <div class="product">
+            <img src="../static/img/products/Citrico.jpg" alt="Imagen de Citrico"> <!-- Imagen 2 --> 
+            <br>
+            <b>$6.500</b>
+            <br><br>
+            <p>Citrico 550 ml</p>
+            <br>
+            <p>Destacan sus sabores a frutas cítricas, pimienta de jamaica y menta.</p>
+            <br>
+            <p>Ideal para consumir en días calurosos</p>
+        </div>
+        <div class="product">
+            <img src="../static/img/products/Floral.jpg" alt="Imagen de Floral"> <!-- Imagen 3 --> 
+            <br>
+            <b>$7.000</b>
+            <br><br>
+            <p>Floral 550 ml</p>
+            <br>
+            <p>Destacan sus notas florales, a canela y pomelo sutiles que recuerdan a la primavera</p>
+            <br>
+            <p>Una experiencia sensorial única</p>
+        </div>
+        <div class="product">
+            <img src="../static/img/products/London Dry.jpg" alt="Imagen de London Dry"> <!-- Imagen 4 --> 
+            <br>
+            <del>$9.500</del><b style="color:red">&nbsp;$8.550 ¡10% OFF!</p></b>
+            <br>
+            <p>London Dry 1.000 ml</p>
+            <br>
+            <p>El Gin de la actualidad, seco al paladar y con notas de pimienta.</p>
+            <br>
+            <p>Ideal para consumir con agua tónica</p>
+        </div>
     </main>
 
     <footer>
-      <div><img src="../static/img/logo.png" /></div>
-      <div>
-        <p>Telefono</p>
-        <p>Facebook</p>
-        <p>Instagram</p>
+      <div class="logo"><img src="../static/img/logo.png" alt="Logo Rojas"></div>
+
+      <div class="advice">
+        <p>Prohibida su venta a menores de 18 años</p>
+        <p>Prohibida su venta a personas embarazadas</p>
+        <p>Consumir con moderación</p>
       </div>
+
+      <div class="contact-info">
+
+        <div class="localization">
+          <a href="https://maps.app.goo.gl/jK7CxrMuNarfVs5KA" class="logo_map" target="_blank" rel="_blank">
+            <i class="fa-solid fa-map-location-dot" alt="Logo mapa"></i>
+          </a>
+          <p>Rojas, Buenos Aires</p>
+        </div>
+
+        <div class="phone">
+          <i class="fa-solid fa-phone-volume" alt="Logo telefono"></i>
+          <p>+54 34 1212-9263</p>
+        </div>
+
+        <div class="email">
+          <i class="fa-regular fa-envelope" alt="Logo coorreo"></i>
+          <p>RojasGin170@gmail.com</p>
+        </div>
+
+        <div class="ig">
+          <a href="https://www.instagram.com/rojas.gin2/?utm_source=qr" class="logo_ig" target="_blank" rel="_blank">
+            <i class="fa-brands fa-instagram" alt="Logo instagram"></i>
+          </a>
+          <p>Instagram</p>
+
+        </div>
+      </div>
+
     </footer>
   </body>
 </html>

@@ -26,7 +26,7 @@ body {
   /* Hero */
   
   .nosotros-heroe {
-    background-color: #e0e0e0;
+    background-color: rgb(224, 224, 224, 0.5);
     padding: 50px 0;
     text-align: center;
   }
@@ -49,7 +49,6 @@ body {
   .proceso,
   .productos,
   .contacto {
-    background-color: #fff;
     padding: 50px 0;
   }
   
