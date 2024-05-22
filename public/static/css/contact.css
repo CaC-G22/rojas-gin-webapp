@@ -4,8 +4,8 @@ body {
     font-family: 'Great Vibes', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 0;
-    padding: 0;
+    margin: 2;
+    padding: 2;
   }
   
   a {
@@ -22,9 +22,9 @@ body {
   
   .contenedor-formulario {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 20px solid #ddd;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -90,3 +90,115 @@ body {
     }
   }
   
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
+    border: 2px solid red;
+}
+
+
+/* algo */
+
+ /* Estilos básicos */
+ body {
+  font-family: sans-serif;
+}
+
+.contenedor-formulario {
+  max-width: 850 px;
+  margin: 2 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="checkbox"] {
+  margin-right: 5px;
+}
+
+[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para el contenedor del mapa */
+.mapa {
+  margin: 20px; /* Agrega un margen alrededor del artículo */
+  padding: 15px; /* Agrega un poco de espacio dentro del contenedor, alrededor del mapa */
+  border: 2px solid #ccc; /* Un borde sutil */
+  border-radius: 8px; /* Bordes redondeados para suavizar el aspecto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Una sombra ligera para darle profundidad */
+  max-width: 620px; /* Limita el ancho máximo del contenedor */
+  margin: auto; /* Centra el mapa horizontalmente */
+}
+
+.mapa h2 {
+  text-align: center; /* Centra el título de la ubicación */
+  margin-bottom: 20px; /* Espacio entre el título y el mapa */
+}
+
+iframe {
+  width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor .mapa */
+  border-radius: 5px; /* Aplica bordes redondeados al iframe */
+}
+
