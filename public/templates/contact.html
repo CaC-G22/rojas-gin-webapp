@@ -1,87 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caja de Contactos</title>
-    <style>
-        /* Estilos básicos */
-        body {
-            font-family: sans-serif;
-        }
-
-        .contenedor-formulario {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-
-        .titulo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        textarea {
-            height: 150px;
-        }
-
-        [type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        [type="submit"] {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="contenedor-formulario">
-        <h2 class="titulo">Contáctanos</h2>
-
-        <form action="#">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <label for="recibir_info">¿Desea recibir más información?</label>
-            <input type="checkbox" id="recibir_info" name="recibir_info">
-
-            <label for="suscribirse">¿Desea suscribirse a nuestro boletín?</label>
-            <input type="checkbox" id="suscribirse" name="suscribirse">
-
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </div>
-</body>
-</html>  
+ 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -113,13 +31,40 @@
       </ul>
     </nav>
 
-    <header>
-      <h1>Rojas Gin</h1>
-    </header>
-
+    
     <main>
-      <h2>Contacto</h2>
-      <p>Completar con contenido acorde</p>
+     <body>
+       <article class="contenedor-formulario">
+        <h2 class="titulo">Contacto</h2>
+
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label for="recibir_info">¿Desea recibir más información?</label>
+            <input type="checkbox" id="recibir_info" name="recibir_info">
+
+            <label for="suscribirse">¿Desea suscribirse a nuestro boletín?</label>
+            <input type="checkbox" id="suscribirse" name="suscribirse">
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </article>
+
+    <article class="mapa">
+      <h2>Aca Estamos</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1649.970268188881!2d-60.7291177!3d-34.1989957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b85719634fdf95%3A0x988f298d934fa442!2sPunto%20medio%20cerveceria%20%26%20Destileria%20Rojas%20Gin!5e0!3m2!1ses-419!2sar!4v1716326768218!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+     
     </main>
 
     
@@ -131,22 +76,6 @@
         <p>Instagram</p>
       </div>
     </footer>
+  <script src="../static/js/contact.js"></script>  
   </body>
 </html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
-</head>
-<body>
-
-    <section class="mapa">
-        <h2>Ubicación</h2>
-        <iframe src="https://maps.app.goo.gl/Y7sK6rQQpBA2UBuv9" width="600" height="400"></iframe>
-    </section>
-
-    </body>
-</html>
-
