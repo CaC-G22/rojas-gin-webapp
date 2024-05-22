@@ -41,6 +41,20 @@ body::-webkit-scrollbar {
   scrollbar-width: none; /* Firefox*/
 }
 
+/* main styling */
+main {
+  background-image: linear-gradient(
+      165deg,
+      rgba(184, 176, 149, 0.8939950980392157) 0%,
+      rgba(240, 230, 197, 0.6026785714285714) 27%,
+      rgba(203, 162, 84, 0.8127626050420168) 95%
+    ),
+    url("../img/landing/rojas-100.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Nav Styling */
 nav {
   position: fixed;
