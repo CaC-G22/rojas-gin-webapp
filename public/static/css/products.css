@@ -1,3 +1,19 @@
+main{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    padding: 2rem;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -9,9 +25,8 @@
 }
 
 .product {
-    float: left;
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: auto;
     margin: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -28,4 +43,16 @@
     margin: 0 auto;
     object-fit: cover;
     border: 1px solid black;
+}
+
+@media screen and (width < 1024px) {
+    header h1 {
+        font-size: 15dvw;
+    }
+
+    .product {
+        width: 80%;
+        padding: 10px;
+        justify-content: center;
+    }
 }
