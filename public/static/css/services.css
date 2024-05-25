@@ -19,8 +19,6 @@ main h2{
 	font-family: "Great Vibes", cursive;
   	font-style: normal;
   	font-size: 4rem;
-  	padding-left: 1em;
-	
 }
 
 /*Carta N1*/
@@ -66,10 +64,6 @@ main h2{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-.card-text-1 h3{
-	text-decoration: underline;
 }
 
 .card-text-1 ul, 
@@ -138,3 +132,60 @@ main h2{
 }
 
 /*Fin de carta 2*/
+
+/*Responsive design*/
+@media(max-width: 1025px){
+
+	/*Carta N1*/
+	.card-1{
+		display: flex;
+		flex-direction: column;
+		border-radius: 25px;
+		margin-top: 5%;
+	}
+
+	.card-image-1{
+		width: 100%;
+	}
+
+	.card-image-1 img{
+		width: 100%;
+		min-height: 100%;
+		border-top-left-radius: 5%;
+		border-top-right-radius: 5%;
+		border-bottom-left-radius: 0;
+	}
+
+	.card-text-1{
+		width: 100%;
+		padding: 10%;
+	}
+	/*Fin Carta N1*/
+
+	/*Carta N2*/
+	.card-2{
+		display: flex;
+		flex-direction: column;
+		border-radius: 25px;
+		margin-top: 10%;
+	}
+
+	.card-image-2{
+		width: 100%;
+		order: 1;
+	}
+
+	.card-image-2 img{
+		width: 100%;
+		min-height: 100%;
+		border-top-left-radius: 5%;
+		border-top-right-radius: 5%;
+		border-bottom-left-radius: 0;
+	}
+
+	.card-text-2{
+		width: 100%;
+		padding: 10%;
+		order: 2;
+	}
+}
