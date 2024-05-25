@@ -142,8 +142,15 @@ textarea {
   height: 150px;
 }
 
-[type="checkbox"] {
+input[type="checkbox"] {
   margin-right: 5px;
+}
+
+label:has(input[type="checkbox"]) {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  width: 100%;
 }
 
 [type="submit"] {
