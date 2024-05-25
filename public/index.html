@@ -7,7 +7,10 @@
     <meta name="description" content="Gintonería Rojas Gin" />
     <link rel="stylesheet" href="./static/css/style.css" />
     <link rel="stylesheet" href="./static/css/landing.css" />
-    <script src="https://kit.fontawesome.com/30e55d7dd2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/30e55d7dd2.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="shortcut icon"
       href="./static/img/favicon.ico"
@@ -36,14 +39,14 @@
     <header>
       <h1>Rojas Gin</h1>
 
+      <!-- WIP -->
       <div class="slider-wrapper">
-        <!-- WIP -->
         <!-- <div class="slider">
           <img class="slide" src="./static/img/banner-placeholder.jpg" />
           <img class="slide" src="./static/img/banner-placeholder.jpg" />
         </div>
-        <div class="slide-counter"></div>
-      </div> -->
+        <div class="slide-counter"></div> -->
+      </div>
     </header>
 
     <main>
@@ -51,7 +54,16 @@
         <article>
           <h2>Productos</h2>
           <div class="item-grid">
-            <div class="grid-image"><img src="./static/img/logo.png" /></div>
+            <picture class="grid-image">
+              <source
+                media="(min-width: 600px)"
+                srcset="./static/img/landing/gin-generic-cocktail.jpg"
+              />
+              <img
+                srcset="./static/img/landing/gin-generic.jpg"
+                alt="gin cocktail"
+              />
+            </picture>
             <div class="grid-content">
               <p>Contamos con 4 tipos distintos de Gin</p>
               <ul>
@@ -61,14 +73,27 @@
                 <li>London Dry</li>
               </ul>
             </div>
-            <div class="grid-hyperlink"><div class="grid-hyperlink"><a href="./templates/products.html" >Ver más</a></div>
+            <div class="grid-hyperlink">
+              <div class="grid-hyperlink">
+                <a href="./templates/products.html">Ver más</a>
+              </div>
+            </div>
           </div>
         </article>
 
         <article>
           <h2>Servicios</h2>
           <div class="item-grid">
-            <div class="grid-image"><img src="./static/img/logo.png" /></div>
+            <picture class="grid-image">
+              <source
+                media="(min-width: 600px)"
+                srcset="./static/img/landing/distilery-generic.jpg"
+              />
+              <img
+                src="./static/img/services/istockphoto-1289771552-612x612.jpg"
+                alt="distilery"
+              />
+            </picture>
             <div class="grid-content">
               <p>
                 Ofrecemos el servicio de elaboracion de gin, creación de
@@ -78,14 +103,18 @@
                 garantizan nuestros productos.
               </p>
             </div>
-            <div class="grid-hyperlink"><a href="./templates/products.html" >Ver más</a></div>
+            <div class="grid-hyperlink">
+              <a href="./templates/products.html">Ver más</a>
+            </div>
           </div>
         </article>
       </section>
     </main>
 
     <footer>
-      <div class="logo"><img src="../static/img/logo.png" alt="Logo Rojas"></div>
+      <div class="logo">
+        <img src="./static/img/logo.png" alt="Logo Rojas" />
+      </div>
 
       <div class="advice">
         <p>Prohibida su venta a menores de 18 años</p>
@@ -94,9 +123,13 @@
       </div>
 
       <div class="contact-info">
-
         <div class="localization">
-          <a href="https://maps.app.goo.gl/jK7CxrMuNarfVs5KA" class="logo_map" target="_blank" rel="_blank">
+          <a
+            href="https://maps.app.goo.gl/jK7CxrMuNarfVs5KA"
+            class="logo_map"
+            target="_blank"
+            rel="_blank"
+          >
             <i class="fa-solid fa-map-location-dot" alt="Logo mapa"></i>
           </a>
           <p>Rojas, Buenos Aires</p>
@@ -113,14 +146,17 @@
         </div>
 
         <div class="ig">
-          <a href="https://www.instagram.com/rojas.gin2/?utm_source=qr" class="logo_ig" target="_blank" rel="_blank">
+          <a
+            href="https://www.instagram.com/rojas.gin2/?utm_source=qr"
+            class="logo_ig"
+            target="_blank"
+            rel="_blank"
+          >
             <i class="fa-brands fa-instagram" alt="Logo instagram"></i>
           </a>
           <p>Instagram</p>
-
         </div>
       </div>
-
     </footer>
 
     <script src="/public/static/js/landing.js"></script>
