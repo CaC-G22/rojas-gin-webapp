@@ -1,58 +1,76 @@
-main{
-    padding: 0 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+  padding: 1rem 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main h2{
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6rem;
-    padding: 2rem;
+main h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  padding: 2rem;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .product {
-    width: 35%;
-    height: auto;
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    text-align: center;
+  width: 35%;
+  height: auto;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .product img {
-    max-width: 100%;
-    height: 400px;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    border: 1px solid black;
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 1px solid black;
 }
 
 @media screen and (width < 1024px) {
-    header h1 {
-        font-size: 15dvw;
-    }
+  header h1 {
+    font-size: 15dvw;
+  }
 
-    .product {
-        width: 80%;
-        padding: 10px;
-        justify-content: center;
-    }
+  .product {
+    width: 80%;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+
+  .product img {
+    max-width: auto;
+    height: auto;
+  }
+
+  main {
+    padding: 0 5px;
+  }
+
+  .logo {
+    margin-top: 5px;
+  }
 }
