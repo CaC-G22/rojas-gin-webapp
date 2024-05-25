@@ -1,140 +1,131 @@
 /* contact */
 
 body {
-    font-family: 'Great Vibes', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 2;
-    padding: 2;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
- 
-  
-  .contenedor-formulario {
-    max-width: 800px;
-    margin: 0px auto;
-    padding: 30px;
-    border: 20px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
- 
-  
-  .titulo {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    font-family: 'Klee One', sans-serif;
-    color: #000;
-  }
-  
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  label {
-    width: 48%; 
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    height: 150px;
-  }
-  
-  [type="checkbox"] {
-    margin-right: 5px;
-  }
-  
+  font-family: "Great Vibes", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 2;
+  padding: 2;
+}
 
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%; 
-    margin-top: 20px;
-  }
-  
- 
-  
-  @media only screen and (max-width: 768px) {
-    label {
-      width: 100%; 
-    }
-  }
-  
-  form {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 0 auto;
-    width: 50%;
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor-formulario {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 30px;
+  border: 20px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Klee One", sans-serif;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  width: 48%;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+
+[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  label {
+    width: 100%;
+  }
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45A049;
+  background-color: #45a049;
 }
-
 
 input[type="text"]:invalid,
 input[type="email"]:invalid,
 textarea:invalid {
-    border: 2px solid red;
+  border: 2px solid red;
 }
-
 
 /* algo */
 
- /* Estilos básicos */
- body {
+/* Estilos básicos */
+body {
   font-family: sans-serif;
 }
 
@@ -156,7 +147,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -201,4 +193,3 @@ iframe {
   width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor .mapa */
   border-radius: 5px; /* Aplica bordes redondeados al iframe */
 }
-
