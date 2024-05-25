@@ -1,11 +1,6 @@
 /* contact */
-
-body {
-  font-family: "Great Vibes", sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 2;
-  padding: 2;
+main {
+  padding: 10vh 10%;
 }
 
 a {
@@ -13,15 +8,14 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+main article:first-of-type {
+  margin-bottom: 7vh;
 }
 
 .contenedor-formulario {
   max-width: 800px;
-  margin: 0px auto;
-  padding: 30px;
+  margin: 0 auto;
+  padding: 20%;
   border: 20px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
@@ -77,12 +71,6 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-  label {
-    width: 100%;
-  }
-}
-
 form {
   border: 1px solid #ccc;
   padding: 20px;
@@ -122,16 +110,10 @@ textarea:invalid {
   border: 2px solid red;
 }
 
-/* algo */
-
 /* Estilos básicos */
-body {
-  font-family: sans-serif;
-}
-
 .contenedor-formulario {
-  max-width: 850 px;
-  margin: 2 auto;
+  max-width: 850px;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -192,4 +174,10 @@ textarea {
 iframe {
   width: 100%; /* Hace que el iframe ocupe todo el ancho del contenedor .mapa */
   border-radius: 5px; /* Aplica bordes redondeados al iframe */
+}
+
+@media only screen and (max-width: 768px) {
+  label {
+    width: 100%;
+  }
 }
