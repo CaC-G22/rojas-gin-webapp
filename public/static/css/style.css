@@ -68,7 +68,6 @@ nav {
 
 nav > ul {
   list-style-type: none;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -79,7 +78,6 @@ nav > ul {
 nav > ul li {
   position: relative;
   min-width: 10%;
-  height: inherit;
   text-align: center;
   border: 1px solid var(--color-tertiary-bis);
   box-shadow: inset -40px 0px 50px -45px var(--color-tertiary-bis),
@@ -96,12 +94,10 @@ nav > ul li:last-child {
 }
 
 nav > ul li > a {
-  width: 100%;
-  height: inherit;
-  align-content: center;
   text-align: center;
   color: var(--color-tertiary-bis);
   font-family: "Klee One", cursive;
+  font-size: 1.6rem;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
@@ -206,6 +202,10 @@ footer div > p {
   nav > ul li {
     min-width: 15%;
   }
+
+  nav > ul li > a {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (width < 425px) {
@@ -216,6 +216,10 @@ footer div > p {
   nav > ul li:first-child,
   nav > ul li:last-child {
     border-radius: 0;
+  }
+
+  nav > ul li > a {
+    font-size: 1.1rem;
   }
 
   footer {
