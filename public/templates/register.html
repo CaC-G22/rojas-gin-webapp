@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicios - Rojas Gin</title>
-    <meta name="description" content="Servicios  de Gintonería Rojas Gin" />
+    <title>Registro - Rojas Gin</title>
+    <meta name="description" content="Gintonería Rojas Gin" />
     <link rel="stylesheet" href="../static/css/style.css" />
-    <link rel="stylesheet" href="../static/css/services.css" />
+    <link rel="stylesheet" href="../static/css/landing.css" />
     <link rel="stylesheet" href="../static/css/register.css" />
     <script
       src="https://kit.fontawesome.com/30e55d7dd2.js"
@@ -14,9 +14,10 @@
     ></script>
     <link
       rel="shortcut icon"
-      href="../static/img/favicon.ico"
+      href="./static/img/favicon.ico"
       type="image/x-icon"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,64 +38,57 @@
       </ul>
     </nav>
 
-    <main>
-      <h2>Servicios</h2>
-      <div class="card-container">
-        <div class="card-1">
-          <!--Carta 1-->
-          <div class="card-image-1">
-            <img
-              src="../static/img/services/istockphoto-1047762788-612x612.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="card-text-1">
-            <h3>
-              En <u>Rojas Gin</u> nos enorgullecemos de contar con la
-              fabricación de 4 tipos distintos de Gin de la más alta calidad
-            </h3>
-            <ul>
-              <li>Old Tom</li>
-              <li>Cítrico</li>
-              <li>Floral</li>
-              <li>London Dry</li>
-            </ul>
-          </div>
-        </div>
-        <!--Final de carta 1-->
-      </div>
+    <header class="register-header">
+      <h1>Rojas Gin</h1>
+    </header>
 
-      <div class="card-container">
-        <div class="card-2">
-          <!--Carta 2-->
-          <div class="card-image-2">
-            <img
-              src="../static/img/services/istockphoto-1289771552-612x612.jpg"
-              alt=""
+    <main>
+      <section class="register-main">
+        <h2>Registrarse</h2>
+        <form name="registerForm">
+          <fieldset>
+            <legend>Nombre</legend>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Nombre"
             />
-          </div>
-          <div class="card-text-2">
-            <h3>Elaboración</h3>
-            <p>
-              Ofrecemos el servicio de elaboración de Gin, creación de recetas,
-              contamos con todos las regulaciones para que el producto salga con
-              un estándar de calidad excelente, contamos con
-              <a
-                href="https://www.argentina.gob.ar/anmat/regulados/alimentos/alimentos-autorizados-establecimientos-habilitados"
-                target="_blank"
-                >Rne y Rnpa</a
-              >, inscripción al
-              <a
-                href="https://www.argentina.gob.ar/inv/control-de-alcoholes
-            "
-                target="_blank"
-                >INV</a
-              >, y controles de calidad que garantizan nuestros productos.
-            </p>
-          </div>
+          </fieldset>
+          <fieldset>
+            <legend>Apellido</legend>
+            <input
+              type="last_name"
+              name="last_name"
+              id="last_name"
+              placeholder="Apellido"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>E-mail</legend>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Contraseña</legend>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+          </fieldset>
+
+          <input type="submit" value="Registrarse" />
+        </form>
+        <div>
+          <p>Ya tenés cuenta? <a href="login.html">Ingresá!</a></p>
         </div>
-        <!--Final de carta 2-->
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -144,5 +138,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="/public/static/js/landing.js"></script>
+    <script src="/public/static/js/register.js"></script>
   </body>
 </html>

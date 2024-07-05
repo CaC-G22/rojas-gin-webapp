@@ -1,0 +1,70 @@
+.register-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 20dvh;
+  padding: 2rem;
+  background-image: url("../img/landing/banner-placeholder.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.register-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.95);
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0 0 10px var(--color-tertiary-bis);
+  z-index: 900;
+  padding: 2rem;
+}
+
+.register-main {
+  min-height: 60dvh;
+  padding: 2rem 20%;
+  text-align: center;
+}
+
+.register-main h2,
+.register-main p {
+  margin-bottom: 1rem;
+}
+
+form[name="logInForm"],
+form[name="registerForm"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  padding: 0 10%;
+  margin-bottom: 1rem;
+}
+
+form[name="logInForm"] fieldset,
+form[name="registerForm"] fieldset {
+  text-align: left;
+  width: 100%;
+  margin: 2% auto;
+}
+
+form[name="logInForm"] input,
+form[name="registerForm"] input {
+  width: 100%;
+  height: 2rem;
+}
+
+form[name="logInForm"] > input[type="submit"],
+form[name="registerForm"] > input[type="submit"] {
+  width: 20%;
+  font-weight: bolder;
+}
