@@ -1,29 +1,44 @@
-const updBtn = document.getElementById("update-user-info-button");
-const delBtn = document.getElementById("delete-user-button");
+import { completeForm, generalFetch } from "./general.js";
 
-updBtn.addEventListener("mousedown", change);
-updBtn.addEventListener("mouseup", change);
-delBtn.addEventListener("mousedown", change);
-delBtn.addEventListener("mouseup", change);
+// Register new user action
+// Gets button, posts form, stores response info in local storage, redirects to profile
+const form = document.getElementById("registerForm");
 
-function change(e) {
-  e.target.classList.toggle("pressed");
-}
+const registerUser = async (evt) => {
+  evt.preventDefault();
 
+  const fieldIds = ["first_name", "last_name", "email", "password"];
 
+  const formData = {
+    first_name: form.first_name.value,
+    last_name: form.last_name.value,
+    email: form.email.value,
+    password: form.password.value,
+  };
 
-function userLogIn(params) {
-  
-}
+  if (completeForm(formData, fieldIds)) {
+    const registerRequest = await generalFetch(
+      "POST",
+      "/users/register",
+      formData
+    );
 
-function userRegister(params) {
-  
-}
+    if (registerRequest.ok) {
+      const userInfo = await registerRequest.json();
 
-function userUpdate(params) {
-  
-}
+      window.localStorage.setItem("user", JSON.stringify(userInfo.user));
 
-function userDelete(params) {
-  
-}
+      alert(userInfo.message);
+
+      window.location.replace("/templates/profile.html");
+    } else {
+      const failedregister = await registerRequest.json();
+
+      alert(failedregister.message);
+    }
+  } else {
+    alert("Complete todos los campos");
+  }
+};
+
+form.addEventListener("submit", registerUser);

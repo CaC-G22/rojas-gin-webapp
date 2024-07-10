@@ -34,6 +34,7 @@
         <li><a href="./about.html">Nosotros</a></li>
         <li><a href="./market.html">Market</a></li>
         <li><a href="./contact.html">Contacto</a></li>
+        <li class="profile-btn"><a href="./profile.html">Perfil</a></li>
         <li class="login-btn"><a href="./login.html">Ingresar</a></li>
       </ul>
     </nav>
@@ -45,7 +46,7 @@
     <main>
       <section class="register-main">
         <h2>Registrarse</h2>
-        <form name="registerForm">
+        <form name="registerForm" id="registerForm">
           <fieldset>
             <legend>Nombre</legend>
             <input
@@ -83,7 +84,7 @@
             />
           </fieldset>
 
-          <input type="submit" value="Registrarse" />
+          <input type="submit" id="registerButton" value="Registrarse" />
         </form>
         <div>
           <p>Ya tenés cuenta? <a href="login.html">Ingresá!</a></p>
@@ -139,7 +140,7 @@
       </div>
     </footer>
 
-    <script src="/public/static/js/landing.js"></script>
-    <script src="/public/static/js/register.js"></script>
+    <script src="/static/js/general.js" type="module"></script>
+    <script src="/static/js/register.js" type="module"></script>
   </body>
 </html>

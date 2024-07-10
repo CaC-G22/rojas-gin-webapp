@@ -35,6 +35,7 @@
         <li><a href="./about.html">Nosotros</a></li>
         <li><a href="./market.html">Market</a></li>
         <li><a href="./contact.html">Contacto</a></li>
+        <li class="profile-btn"><a href="./profile.html">Perfil</a></li>
         <li class="login-btn"><a href="./login.html">Ingresar</a></li>
       </ul>
     </nav>
@@ -58,15 +59,51 @@
           />
         </div>
         <div class="profile-actions">
-          <button type="button" id="update-user-info-button">Actualizar</button>
+          <button type="button" id="show-user-update">Actualizar</button>
           <button type="button" id="delete-user-button">Eliminar</button>
-          <!-- <input
-            type="button"
-            id="update-user-info-button"
-            value="Actualizar"
-          />
-          <input type="button" id="delete-user-button" value="Eliminar" /> -->
         </div>
+      </section>
+      <section class="update-form-container hide-element">
+        <form name="updateForm" id="updateForm">
+          <fieldset>
+            <legend>Nombre</legend>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Nombre"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Apellido</legend>
+            <input
+              type="last_name"
+              name="last_name"
+              id="last_name"
+              placeholder="Apellido"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>E-mail</legend>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Contraseña</legend>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+          </fieldset>
+
+          <input type="submit" id="update-user-info-button" value="Enviar" />
+        </form>
       </section>
     </main>
 
@@ -118,7 +155,7 @@
       </div>
     </footer>
 
-    <script src="/public/static/js/landing.js"></script>
-    <script src="/public/static/js/register.js"></script>
+    <script src="/static/js/general.js" type="module"></script>
+    <script src="/static/js/profile.js" type="module"></script>
   </body>
 </html>
