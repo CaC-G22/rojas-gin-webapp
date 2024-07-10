@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", replaceUserInfo);
 const showUserUpdatebutton = document.getElementById("show-user-update");
 const deleteUserButton = document.getElementById("delete-user-button");
 const userUpdateButton = document.getElementById("update-user-info-button");
+const logOutButton = document.getElementById("log-out-button");
 
 function change(e) {
   e.target.classList.toggle("pressed");
@@ -35,6 +36,8 @@ deleteUserButton.addEventListener("mousedown", change);
 deleteUserButton.addEventListener("mouseup", change);
 userUpdateButton.addEventListener("mousedown", change);
 userUpdateButton.addEventListener("mouseup", change);
+logOutButton.addEventListener("mousedown", change);
+logOutButton.addEventListener("mouseup", change);
 
 // Delete user action
 // Gets Id From storage and deletes user WITHOUT any message or confirmation prompt :D
@@ -127,3 +130,13 @@ const updateUserInfo = async (evt) => {
 };
 
 userUpdateButton.addEventListener("click", updateUserInfo);
+
+// Log out
+// Clear storage, redirect to index
+const logOut = () => {
+  window.localStorage.clear();
+
+  window.location.replace("/index.html");
+};
+
+logOutButton.addEventListener("click", logOut);

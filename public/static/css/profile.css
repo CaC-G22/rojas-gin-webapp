@@ -78,3 +78,9 @@ main {
   border-radius: 5px;
   border: 0;
 }
+
+#delete-user-button:hover,
+.profile-actions button:hover,
+#updateForm input[type="submit"]:hover {
+  cursor: pointer;
+}
