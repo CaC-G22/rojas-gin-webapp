@@ -89,7 +89,8 @@ nav > ul li:first-child {
   border-radius: 1dvh 0 0 1dvh;
 }
 
-nav > ul li:last-child {
+nav > ul li:last-child,
+.profile-btn {
   border-radius: 0 1dvh 1dvh 0;
 }
 
@@ -110,6 +111,18 @@ nav > ul li:hover > a {
   background-color: var(--color-tertiary-bis);
   color: var(--color-primary-bis);
   font-weight: 800;
+}
+
+.login-btn {
+  background-color: crimson;
+}
+
+.logged {
+  background-color: green;
+}
+
+.hide-element {
+  display: none;
 }
 
 /* Body */

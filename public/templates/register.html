@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Rojas Gin</title>
-    <meta name="description" content="Contacto de Gintonería Rojas Gin" />
+    <title>Registro - Rojas Gin</title>
+    <meta name="description" content="Gintonería Rojas Gin" />
     <link rel="stylesheet" href="../static/css/style.css" />
-    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link rel="stylesheet" href="../static/css/landing.css" />
     <link rel="stylesheet" href="../static/css/register.css" />
     <script
       src="https://kit.fontawesome.com/30e55d7dd2.js"
@@ -14,9 +14,10 @@
     ></script>
     <link
       rel="shortcut icon"
-      href="../static/img/favicon.ico"
+      href="./static/img/favicon.ico"
       type="image/x-icon"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,44 +39,57 @@
       </ul>
     </nav>
 
+    <header class="register-header">
+      <h1>Rojas Gin</h1>
+    </header>
+
     <main>
-      <article class="contenedor-formulario">
-        <h2 class="titulo">Contacto</h2>
+      <section class="register-main">
+        <h2>Registrarse</h2>
+        <form name="registerForm" id="registerForm">
+          <fieldset>
+            <legend>Nombre</legend>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Nombre"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Apellido</legend>
+            <input
+              type="last_name"
+              name="last_name"
+              id="last_name"
+              placeholder="Apellido"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>E-mail</legend>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Contraseña</legend>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+          </fieldset>
 
-        <form id="contactForm" name="contactForm">
-          <label for="firstName">Nombre:</label>
-          <input type="text" id="firstName" name="firstName" class="is-valid" />
-
-          <label for="lastName">Apellido:</label>
-          <input type="text" id="lastName" name="lastName" />
-
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" />
-
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message"></textarea>
-
-          <label for="subscribe"
-            >¿Desea suscribirse a nuestro boletín?
-            <input type="checkbox" id="subscribe" name="subscribe"
-          /></label>
-
-          <button type="submit">Enviar mensaje</button>
+          <input type="submit" id="registerButton" value="Registrarse" />
         </form>
-      </article>
-
-      <article class="mapa">
-        <h2>Acá Estamos</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1649.970268188881!2d-60.7291177!3d-34.1989957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b85719634fdf95%3A0x988f298d934fa442!2sPunto%20medio%20cerveceria%20%26%20Destileria%20Rojas%20Gin!5e0!3m2!1ses-419!2sar!4v1716326768218!5m2!1ses-419!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </article>
+        <div>
+          <p>Ya tenés cuenta? <a href="login.html">Ingresá!</a></p>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -127,6 +141,6 @@
     </footer>
 
     <script src="/static/js/general.js" type="module"></script>
-    <script src="/static/js/contact.js" type="module"></script>
+    <script src="/static/js/register.js" type="module"></script>
   </body>
 </html>

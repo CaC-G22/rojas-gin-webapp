@@ -26,6 +26,7 @@ header h1 {
   text-shadow: 0 0 10px var(--color-tertiary-bis);
   z-index: 900;
 }
+
 .slider-wrapper {
   height: 100%;
   width: 100%;
